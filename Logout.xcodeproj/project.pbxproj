@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18326B8C1CA80A1D001B5551 /* AddTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18326B8B1CA80A1D001B5551 /* AddTravelViewController.swift */; };
 		186454851CA28C4B00E3CC6F /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186454841CA28C4B00E3CC6F /* Firebase.framework */; };
 		186454871CA28C6000E3CC6F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186454861CA28C6000E3CC6F /* CFNetwork.framework */; };
 		186454891CA28D7D00E3CC6F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186454881CA28D7D00E3CC6F /* Security.framework */; };
@@ -17,8 +18,8 @@
 		186454981CA2900300E3CC6F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186454941CA2900300E3CC6F /* CreateAccountViewController.swift */; };
 		186454991CA2900300E3CC6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186454951CA2900300E3CC6F /* LoginViewController.swift */; };
 		1864549A1CA2900300E3CC6F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186454961CA2900300E3CC6F /* Constant.swift */; };
+		1864549C1CA3D8F000E3CC6F /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1864549B1CA3D8F000E3CC6F /* Travel.swift */; };
 		18BF50EB1CA289D5005FC06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF50EA1CA289D5005FC06B /* AppDelegate.swift */; };
-		18BF50ED1CA289D5005FC06B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF50EC1CA289D5005FC06B /* ViewController.swift */; };
 		18BF50F01CA289D5005FC06B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF50EE1CA289D5005FC06B /* Main.storyboard */; };
 		18BF50F31CA289D5005FC06B /* Logout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BF50F11CA289D5005FC06B /* Logout.xcdatamodeld */; };
 		18BF50F51CA289D5005FC06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF50F41CA289D5005FC06B /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18326B8B1CA80A1D001B5551 /* AddTravelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTravelViewController.swift; sourceTree = "<group>"; };
 		186454841CA28C4B00E3CC6F /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "Pods/../build/Debug-iphoneos/Firebase.framework"; sourceTree = "<group>"; };
 		186454861CA28C6000E3CC6F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		186454881CA28D7D00E3CC6F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -38,9 +40,9 @@
 		186454941CA2900300E3CC6F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = "../../Firebase ready/Firebase ready/CreateAccountViewController.swift"; sourceTree = "<group>"; };
 		186454951CA2900300E3CC6F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../../Firebase ready/Firebase ready/LoginViewController.swift"; sourceTree = "<group>"; };
 		186454961CA2900300E3CC6F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = "../../Firebase ready/Firebase ready/Constant.swift"; sourceTree = "<group>"; };
+		1864549B1CA3D8F000E3CC6F /* Travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
 		18BF50E71CA289D5005FC06B /* Logout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BF50EA1CA289D5005FC06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18BF50EC1CA289D5005FC06B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18BF50EF1CA289D5005FC06B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BF50F21CA289D5005FC06B /* Logout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Logout.xcdatamodel; sourceTree = "<group>"; };
 		18BF50F41CA289D5005FC06B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,8 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				18BF50EA1CA289D5005FC06B /* AppDelegate.swift */,
-				18BF50EC1CA289D5005FC06B /* ViewController.swift */,
 				18BF50EE1CA289D5005FC06B /* Main.storyboard */,
+				1864549B1CA3D8F000E3CC6F /* Travel.swift */,
+				18326B8B1CA80A1D001B5551 /* AddTravelViewController.swift */,
 				186454931CA2900300E3CC6F /* DateService.swift */,
 				186454941CA2900300E3CC6F /* CreateAccountViewController.swift */,
 				186454951CA2900300E3CC6F /* LoginViewController.swift */,
@@ -256,8 +259,9 @@
 				186454991CA2900300E3CC6F /* LoginViewController.swift in Sources */,
 				186454981CA2900300E3CC6F /* CreateAccountViewController.swift in Sources */,
 				18BF50F31CA289D5005FC06B /* Logout.xcdatamodeld in Sources */,
-				18BF50ED1CA289D5005FC06B /* ViewController.swift in Sources */,
+				1864549C1CA3D8F000E3CC6F /* Travel.swift in Sources */,
 				18BF50EB1CA289D5005FC06B /* AppDelegate.swift in Sources */,
+				18326B8C1CA80A1D001B5551 /* AddTravelViewController.swift in Sources */,
 				186454971CA2900300E3CC6F /* DateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
