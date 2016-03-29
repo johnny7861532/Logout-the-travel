@@ -11,16 +11,13 @@ import Firebase
 class Travel {
     private var _travelRef: Firebase!
     private var _travelkey: String!
-    private var _travelLocation: String!
+    
     private var _travelText: String!
     private var _username: String!
     private var _travelLikes: Int!
     
     var travelkey:String{
     return _travelkey
-    }
-    var travelLocation:String{
-    return _travelLocation
     }
     var travelText:String{
     return _travelText
@@ -42,13 +39,9 @@ class Travel {
         {
         self._travelText = travel
         }
-        if let likes = dictionary["travelLikes"]as? Int
+        if let likes = dictionary["Likes"]as? Int
         {
         self._travelLikes = likes
-        }
-        if let  location = dictionary["travelLocation"]as? String
-        {
-        self._travelLocation = location
         }
         if let user = dictionary["author"]as? String
         {
@@ -59,6 +52,18 @@ class Travel {
         // The above properties are assigned to their key.
         self._travelRef = DataService.dataService.TRAVEL_REF.childByAppendingPath(self._travelkey)
         
+    }
+    
+    func addSubtractVote(addLike: Bool){
+        if addLike{
+        _travelLikes = _travelLikes + 1
+        }
+        else{
+        _travelLikes = _travelLikes - 1
+        }
+        // Save the new likes total.
+        _travelRef.childByAppendingPath("Likes").setValue(_travelLikes)
+    
     }
 
 
